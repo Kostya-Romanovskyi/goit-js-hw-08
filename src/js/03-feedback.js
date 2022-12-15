@@ -21,7 +21,7 @@ function onSubmitForm(e) {
   e.currentTarget.reset();
 
   const receivedData = localStorage.getItem(STORAGE_KEY);
-  parsedData = JSON.parse(receivedData);
+  const parsedData = JSON.parse(receivedData);
 
   console.log(parsedData);
 
