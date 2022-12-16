@@ -18,7 +18,6 @@ player.getVideoTitle().then(function (title) {
 player.on(
   'timeupdate',
   throttle(function (data) {
-    // data is an object containing properties specific to that event
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data.seconds));
   }, 1000)
 );
